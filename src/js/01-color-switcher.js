@@ -20,6 +20,7 @@ function onButtonStart(evt) {
 
 buttonStop.addEventListener('click', onButtonStop);
 
+
 function onButtonStop() {
   buttonStart.removeAttribute('disabled');
   clearInterval(timerId);
