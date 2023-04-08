@@ -5,7 +5,7 @@ import 'flatpickr/dist/flatpickr.min.css';
 
 import { Notify } from 'notiflix/build/notiflix-notify-aio';
 
-refs = {
+const refs = {
   inputEl: document.querySelector('input[type="text"]'),
   buttonStartEl: document.querySelector('button[data-start]'),
   days: document.querySelector('span[data-days]'),
