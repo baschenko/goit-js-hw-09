@@ -12,6 +12,7 @@ buttonStart.addEventListener('click', onButtonStart);
 
 function onButtonStart(evt) {
   evt.target.setAttribute('disabled', '');
+  buttonStop.removeAttribute('disabled');
 
   timerId = setInterval(() => {
     document.body.style.backgroundColor = getRandomHexColor();
@@ -20,8 +21,9 @@ function onButtonStart(evt) {
 
 buttonStop.addEventListener('click', onButtonStop);
 
-
-function onButtonStop() {
+function onButtonStop(evt) {
+  evt.target.setAttribute('disabled', '');
   buttonStart.removeAttribute('disabled');
+
   clearInterval(timerId);
 }
